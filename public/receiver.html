@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FILE SHARING</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+    <main role="main" class="container">
+        <div class="jumbotron" id="uploadbtn">
+            <h1>RECEIVER</h1>
+            <p class="lead">Receiver of file shared using socket.io.</p>
+
+        </div>
+
+    </main>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"><button id="btnconnectoroom" class="btn btn-lg btn-primary">Connect</button></div>
+            <div class="col-6"><span class="h1">ROOM:</span><input class="form-control" type="text" name="theroom" id="theroom" placeholder="The room id from file sender">
+
+                <hr/>
+                <div class="row">
+                    <div id="filelist" class="col-12">
+
+
+                </div> </div>
+
+
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/receiver.js"></script>
+</body>
+</html>
